@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+
+/*******************************************
+                    C++ explicit
+
+    按默认规定，传一个参数的构造函数也定义了一个隐式转换,
+    多个参数，只有一个无默认值，其他参数都有默认值的情况也是这样
+
+**********************************************/
+
+#include <iostream>
+
+using namespace std;
+
+class Rational {
+
+public:
+	// explicit Rational(int numerator = 0, int denominatoro = 1) :a(numerator), b(denominatoro) { cout << "a = " << a << "b" << b << endl; }  //如果限制隐式转换，oneEight * 2编译不过
+	Rational(int numerator = 0, int denominatoro = 1) :a(numerator), b(denominatoro) { cout << "a = " << a << "b" << b << endl; }
+	const Rational operator*(const Rational &rhs)
+	{
+		return Rational(a*rhs.a, b*rhs.b);
+	}
+private:
+	int a, b;
+};
+
+int main()
+{
+	Rational oneEight(1, 8);
+	Rational result = oneEight * 2;  //相当于oneEight.operator*(2),编译器知道传递了一个int，而函数需要的是Rational,而它又发现构造函数支持隐式转换，所以先调用构造函数，再进行运算
+	// 等价于 const Rantional tmp(numerator=2), result = oneEight * tmp;
+	return 0;
+}
+
+////////////////////////////////////////////////////////////
+
+class String{
+    public:
+      explicit String(int n){cout << "int" << endl;}
+      String(const char *p){cout << "char *" << endl;}
+};
+
+int main()
+{
+    //String s0 = 5;  //错误：不能做隐式int->String转换，不可以把5包装成String类，要使没有explicit的话就可以
+    //String s1 = 'a'; //错误：不能做隐式char(int)->String转换
+    String s2(10);   //可以：调用explicit String(int n);
+    String s3 = String(10);//可以：调用explicit String(int n);再调用默认的复制构造函数
+    String s4 = "Brian"; //可以：隐式转换调用String(const char *p);再调用默认的复制构造函数,可以把"Brian"包装成String类
+    String s5("Fawlty"); //可以：正常调用String(const char *p);
+
+    return 0;
+}
+

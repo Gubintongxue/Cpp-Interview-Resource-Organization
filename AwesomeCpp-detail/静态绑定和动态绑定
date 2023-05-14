@@ -1,0 +1,56 @@
+#include <iostream>
+
+using namespace std;
+
+class B {
+public:
+	void mf() { cout << "mfB" << endl; }  
+	virtual void name(int i)
+	{
+		cout << "nameB" << " " << i << endl;
+	}
+	virtual void sex()
+	{
+		cout << "sexB" << endl;
+	}
+};
+
+class D : public B
+{
+public:
+	void mf(int i) { cout << "mfD" << endl; }
+	virtual void name(double i)
+	{
+		cout << "nameD" << " " << i << endl;
+	}
+	virtual void sex()
+	{
+		cout << "sexD" << endl;
+	}
+};
+int main()
+{
+	// 只有虚函数的重写（也就是多态）才是动态绑定，其行为取决于动态类型
+	// 其他诸如重写的虚函数的默认参数、虚函数的覆盖、非虚函数的重写和覆盖都是静态绑定，只会调用静态类型的行为
+	
+	//pb1的静态类型是B*，动态类型是B*
+	//pb2的静态类型是B*，动态类型是D*
+	D d;
+	B b;
+	B *pb1 = &b;  
+	B *pb2 = &d; //pb2的动态类型是D*，静态类型是B*，所以静态绑定的行为取决于静态类型
+
+	// 很显然，pb1,pb2的静态类型是B*,而mf是非虚函数的覆盖（重写也一样），所以是静态绑定，只会调用B*的方法，而不管动态类型是什么
+	pb1->mf();
+	pb2->mf();
+
+	// pb1,pb2的静态类型是B*,而name是虚函数的覆盖，所以是静态绑定，只会调用B*的方法，而不管动态类型是什么
+	pb1->name(2);
+	pb2->name(3);
+
+	// pb1,pb2的静态类型是B*,而sex是虚函数的重写，所以是动态绑定，pb1调用动态类型B*的方法，pb2调用动态类型D*的方法
+	pb1->sex();
+	pb2->sex();
+
+	return 0;
+}
