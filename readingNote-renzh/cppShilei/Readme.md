@@ -1,0 +1,417 @@
+# 目录
+## C++内功
+- [demo0](demo0)
+    - 进程虚拟地址空间区域划分      
+        - [笔记](demo0/note1.md)
+    - 从指令角度掌握函数调用堆栈    
+        - [笔记](demo0/note2.md)
+    - 编译器角度理解C++的编译和链接 
+        - [笔记](demo0/note3.md)
+    
+## C++基础知识
+- [demo1](demo1)
+    - 形参带默认值的函数
+    - [demo1.cpp](demo1/demo1.cpp)
+- [demo2](demo2)
+    - inline内联函数 和 普通函数的区别
+    - [demo2.cpp](demo2/demo2.cpp)
+- [demo3](demo3)
+    - 函数重载
+    - [demo3.cpp](demo3/demo3.cpp)
+- [demo4](demo4)
+    - 函数重载，const, volatile怎么影响形参类型
+    - [demo4.cpp](demo4/demo4.cpp)
+- [demo5](demo5)
+    - C 和 C++ 互相调用
+    - [demo5.cpp](demo5/demo5.cpp)
+    - [demo5.c](demo5/demo5.c)
+    - [main.cpp](demo5/main.cpp)
+    - [test.c](demo5/test.c)
+- [demo6](demo6)
+    - __cplusplus是什么
+    - [demo6.cpp](demo6/demo6.cpp)
+    - [main.cpp](demo6/main.c)
+- [demo7](demo7)
+    - const的用法
+    - [demo7.cpp](demo7/demo7.cpp)
+    - [main.cpp](demo7/main.cpp)
+    - [test.c](demo7/test.c)
+- [demo8](demo8)
+    - const和一级指针结合   
+    - [笔记](demo8/readme.md)
+    - [demo8.cpp](demo8/demo8.cpp)
+- [demo9](demo9)
+    - const和二级指针结合   
+    - [笔记](demo9/readme.md)
+    - [demo9.cpp](demo9/demo9.cpp)
+- [demo10](demo10)
+    - C++ 左值引用和右值引用 
+    - [笔记](demo10/readme.md)
+    - [demo10.cpp](demo10/demo10.cpp)
+- [demo11](demo11)
+    - const, 指针, 引用的结合使用 
+    - [笔记](demo11/readme.md)
+    - [demo11.cpp](demo11/demo11.cpp)
+- [demo12](demo12)
+    - C++ new 和 delete 
+    - [笔记](demo12/readme.md)
+    - [demo12.cpp](demo12/demo12.cpp)
+
+## C++面向对象
+- [demo13](demo13)
+    - 类和对象、this指针 
+    - [笔记](demo13/readme.md)
+    - [main.cpp](demo13/main.cpp)
+- [demo14](demo14)
+    - 构造函数和析构函数
+    - [demo14.cpp](demo14/demo14.cpp)
+- [demo15](demo15)
+    - 对象的深拷贝和浅拷贝
+    - [MyStack.cpp](demo15/MyStack.cpp)
+- [demo16](demo16)
+    - 类和对象代码应用实践
+    - [MyQueue.cpp](demo16/MyQueue.cpp)
+    - [MyString.cpp](demo16/MyString.cpp)
+- [demo17](demo17)
+    - 构造函数的初始化列表
+    - [test1.cpp](demo17/test1.cpp)
+    - [test2.cpp](demo17/test2.cpp)
+- [demo18](demo18)
+    - 类的各种成员方法及区别 
+    - [笔记](demo18/readme.md)
+    - [demo18.cpp](demo18/demo18.cpp)
+- [demo19](demo19)
+    - 指向类成员的指针
+    - [demo19.cpp](demo19/demo19.cpp)
+
+## C++模板编程
+- [demo20](demo20)
+    - 函数模板
+    - [test.cpp](demo20/test.cpp)
+    - [main.cpp](demo20/main.cpp)
+- [demo21](demo21)
+    - 类模板 
+    - [MyStackWithTemplate.cpp](demo21/MyStackWithTemplate.cpp)
+    - [Sort.cpp](demo21/Sort.cpp)
+- [demo22](demo22)
+    - 实现C++ STL向量容器vector代码 
+    - [MyVector.cpp](demo22/MyVector.cpp)
+- [demo23](demo23)
+    - 容器空间配置器allocator，改进vector 
+    - [MyVectorWithAllocator.cpp](demo23/MyVectorWithAllocator.cpp)
+- 本章参考资料
+    - [C++STL - 容器空间配置器allocator的原理](https://blog.csdn.net/QIANGWEIYUAN/article/details/88721363?spm=1001.2014.3001.5502)
+
+## C++运算符重载
+- [demo24](demo24)
+    - 学习复数类CComplex
+    - [CComplex.cpp](demo24/CComplex)
+- [demo25](demo25)
+    - 模拟实现C++的string类代码
+    - [MyString.cpp](demo25/MyString.cpp)
+- [demo26](demo26)
+    - string 字符串对象的迭代器iterator实现
+    - [MyStringWithIterator.cpp](demo26/MyStringWithIterator.cpp)
+- [demo27](demo27)
+    - vetor容器的iterator实现
+    - [MyVector.cpp](demo27/MyVector.cpp)
+- [demo28](demo28)
+    - 容器的迭代器失效问题
+    - [笔记](demo28/readme.md)
+    - [test1.cpp](demo28/test1.cpp)
+    - [test2.cpp](demo28/test2.cpp)
+    - [test3.cpp](demo28/test3.cpp)
+    - [Vector.cpp](demo28/Vector.cpp)
+- [demo29](demo29)
+    - 深入理解new和delete的原理
+    - [笔记](demo29/readme.md)
+    - [test.cpp](demo29/test.cpp)
+- [demo30](demo30)
+    - new和delete重载实现的对象池应用
+    - [test.cpp](demo30/test.cpp)
+- 本章参考资料
+    - [C++ 迭代器iterator详解](https://blog.csdn.net/QIANGWEIYUAN/article/details/89184546)
+
+## C++继承与多态
+- [demo31](demo31)
+    - 继承的基本意义
+    - [笔记](demo31/readme.md)
+    - [test.cpp](demo31/test.cpp)   
+- [demo32](demo32)
+    - 派生类的构造过程
+    - [笔记](demo32/readme.md)
+    - [test.cpp](demo32/test.cpp)
+- [demo33](demo33)
+    - 重载、隐藏
+    - [笔记](demo33/readme.md)
+    - [test.cpp](demo33/test.cpp)
+- [demo34](demo34)
+    - 虚函数、静态绑定和动态绑定
+    - [笔记](demo34/readme.md)
+    - [test.cpp](demo34/test.cpp)
+    - [main.cpp](demo34/main.cpp)
+- [demo35](demo35)
+    - 虚析构函数
+    - [笔记](demo35/readme.md)
+    - [test.cpp](demo35/test.cpp)
+    - [main.cpp](demo35/main.cpp)
+- [demo36](demo36)
+    - 虚函数和动态绑定
+    - [笔记](demo36/readme.md)
+    - [main.cpp](demo36/main.cpp)
+- [demo37](demo37)
+    - 多态
+    - [笔记](demo37/readme.md)
+    - [main.cpp](demo37/main.cpp)
+- [demo38](demo38)
+    - 抽象类
+    - [main.cpp](demo38/main.cpp)
+- [demo39](demo39)
+    - 继承多态笔试题
+    - 示例1 [test1.cpp](demo39/test1.cpp)
+    - 示例2 [test2.cpp](demo39/test2.cpp)
+    - 示例3 [test3.cpp](demo39/test3.cpp) [test4.cpp](demo39/test4.cpp)
+    - 示例4 [test5.cpp](demo39/test5.cpp)
+- [demo40](demo40)
+    - 虚基类和虚继承
+    - [笔记](demo40/readme.md)
+    - [test1.cpp](demo40/test1.cpp)
+    - [test2.cpp](demo40/test2.cpp)
+- [demo41](demo41)
+    - 菱形继承
+    - [test1.cpp](demo41/test1.cpp)
+    - [test2.cpp](demo41/test2.cpp)
+- [demo42](demo42)
+    - C++的四种类转换
+    - [笔记](demo42/readme.md)
+    - [main.cpp](demo42/main.cpp)
+
+## C++ STL
+- [demo43](demo43)
+    - vector容器
+    - [笔记](demo43/readme.md)
+    - [main.cpp](demo43/main.cpp)
+- [demo44](demo44)
+    - deque容器和list容器
+    - [笔记](demo44/readme.md)
+    - [main.cpp](demo44/main.cpp)
+- [demo45](demo45)
+    - vector, deque和list对比
+    - [笔记](demo45/readme.md)
+    - [main.cpp](demo45/main.cpp)
+- [demo46](demo46)
+    - 容器适配器
+    - [笔记](demo46/readme.md)
+    - [main.cpp](demo46/main.cpp)
+- [demo47](demo47)
+    - 无序关联容器
+    - [笔记](demo47/readme.md)
+    - [main.cpp](demo47/main.cpp)
+- [demo48](demo48)
+    - 有序关联容器
+    - [main.cpp](demo48/main.cpp)
+- [demo49](demo49)
+    - 迭代器iterator
+    - [笔记](demo49/readme.md)
+    - [main.cpp](demo49/main.cpp)
+- [demo50](demo50)
+    - 函数对象
+    - [笔记](demo50/readme.md)
+    - [test1.cpp](demo50/test1.cpp)
+    - [test2.cpp](demo50/test2.cpp)
+    - [test3.cpp](demo50/test3.cpp)
+    - [test4.cpp](demo50/test4.cpp)
+- [demo51](demo51)
+    - 泛型算法和绑定器
+    - [笔记](demo51/readme.md)
+    - [main.cpp](demo51/main.cpp)
+- 本章参考资料
+    - [C++STL 容器内容总结](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792786)
+
+## 大厂开发岗面试问题
+- [demo52](demo52)
+    - 大厂开发岗面试问题解析
+    - [笔记](demo52/readme.md)
+    - [解答](demo52/answer.md)
+
+## C++对象的应用优化、右值引用的优化
+- [demo53](demo53)
+    - 对象使用过程中背后调用了哪些方法
+    - [笔记](demo53/readme.md)
+    - [test1.cpp](demo53/test1.cpp)
+    - [test2.cpp](demo53/test2.cpp)
+- [demo54](demo54)
+    - 对象优化
+    - [笔记](demo54/readme.md)
+    - [test.cpp](demo54/test.cpp)
+- [demo55](demo55)
+    - CMyString
+    - [test.cpp](demo55/test.cpp)
+- [demo56](demo56)
+    - CMyString + 右值引用
+    - [笔记](demo56/readme.md)
+    - [test1.cpp](demo56/test1.cpp)
+    - [test2.cpp](demo56/test1.cpp)
+- [demo57](demo57)
+    - CMyString在vector上应用
+    - [笔记](demo57/readme.md)
+    - [test1.cpp](demo57/test1.cpp)
+    - [test2.cpp](demo57/test2.cpp)
+- [demo58](demo58)
+    - move移动语义和forward完美转发
+    - [笔记](demo58/readme.md)
+    - [test1.cpp](demo58/test1.cpp)
+    - [test2.cpp](demo58/test2.cpp)
+
+## C++智能指针
+- [demo59](demo59)
+    - 智能指针基础知识
+    - [笔记](demo59/readme.md)
+    - [test1.cpp](demo59/test1.cpp)
+    - [test2.cpp](demo59/test2.cpp)
+    - [test3.cpp](demo59/test3.cpp)
+- [demo60](demo60)
+    - 不带引用计数的智能指针
+    - [笔记](demo60/readme.md)
+    - [test1.cpp](demo60/test1.cpp)
+    - [test2.cpp](demo60/test2.cpp)
+    - [test3.cpp](demo60/test3.cpp)
+- [demo61](demo61)
+    - 模拟实现带引用计数的智能指针
+    - [笔记](demo61/readme.md)
+    - [test.cpp](demo61/test.cpp)
+- [demo62](demo62)
+    - shared_ptr 交叉引用问题
+    - [笔记](demo62/readme.md)
+    - [test1.cpp](demo62/test1.cpp)
+    - [test2.cpp](demo62/test2.cpp)
+    - [test3.cpp](demo62/test3.cpp)
+- [demo63](demo63)
+    - 多线程访问共享对象的线程安全问题
+    - [test1.cpp](demo63/test1.cpp)
+    - [test2.cpp](demo63/test2.cpp)
+- [demo64](demo64)
+    - 自定义删除器
+    - [笔记](demo64/readme.md)
+    - [test.cpp](demo64/test.cpp)
+- 本章参考资料
+    - [深入掌握C++智能指针](https://blog.csdn.net/QIANGWEIYUAN/article/details/88562935)
+
+## C++11的bind绑定器和function函数对象
+- [demo65](demo65)
+    - bind1st 和 bind2nd
+    - [笔记](demo65/readme.md)
+    - [test.cpp](demo65/test.cpp)
+- [demo66](demo66)
+    - bind1st 和 bind2nd 底层原理
+    - [笔记](demo66/readme.md)
+    - [test.cpp](demo66/test.cpp)
+- [demo67](demo67)
+    - function 函数对象的应用示例
+    - [笔记](demo67/readme.md)
+    - [test1.cpp](demo67/test1.cpp)
+    - [test2.cpp](demo67/test2.cpp)
+- [demo68](demo68)
+    - 模板的完全特例化和部分特例化
+    - [笔记](demo68/readme.md)
+    - [test1.cpp](demo68/test1.cpp)
+    - [test2.cpp](demo68/test2.cpp)
+    - [test3.cpp](demo68/test3.cpp)
+- [demo69](demo69)
+    - function 函数对象类型的实现原理
+    - [笔记](demo69/readme.md)
+    - [test1.cpp](demo69/test1.cpp)
+    - [test2.cpp](demo69/test2.cpp)
+- [demo70](demo70)
+    - bind 和 function 实现线程池
+    - [笔记](demo70/readme.md)
+    - [test1.cpp](demo70/test1.cpp)
+    - [test2.cpp](demo70/test2.cpp)
+- [demo71](demo71)
+    - lambdda 表达式原理
+    - [笔记](demo71/readme.md)
+    - [test1.cpp](demo71/test1.cpp)
+    - [test2.cpp](demo71/test2.cpp)
+- [demo72](demo72)
+    - lambda表达式的应用实践
+    - [笔记](demo72/readme.md)
+    - [test1.cpp](demo72/test1.cpp)
+    - [test2.cpp](demo72/test2.cpp)
+- 本章参考资料
+    - [C++11 - thread多线程编程，线程互斥和同步通信，死锁问题分析解决](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792621)
+
+## C++11 知识点汇总
+- [demo73](demo73)
+    - 常用知识点总结
+    - [笔记](demo73/readme.md)
+- [demo74](demo74)
+    - 通过thread类编写C++多线程程序
+    - [笔记](demo74/readme.md)
+    - [test.cpp](demo74/test.cpp)
+- [demo75](demo75)
+    - 线程间互斥-mutex互斥锁和lock_guard
+    - [笔记](demo75/readme.md)
+    - [test.cpp](demo75/test.cpp)
+- [demo76](demo76)
+    - 线程间同步通信-生产消费者模型
+    - [笔记](demo76/readme.md)
+    - [test.cpp](demo76/test.cpp)
+- [demo77](demo77)
+    - lock_guard和unique_lock
+    - [笔记](demo77/readme.md)
+    - [test.cpp](demo77/test.cpp)
+- [demo78](demo78)
+    - 基于CAS操作的atomic原子类型
+    - [笔记](demo78/readme.md)
+    - [test.cpp](demo78/test.cpp)
+
+## 设计模式
+- [demo79](demo79)
+    - 单例模式
+    - [笔记](demo79/readme.md)
+    - [test1.cpp](demo79/test1.cpp)
+    - [test2.cpp](demo79/test2.cpp)
+    - [test3.cpp](demo79/test3.cpp)
+    - [C++设计模式 - 单例模式](https://blog.csdn.net/QIANGWEIYUAN/article/details/88544524)
+- [demo80](demo80)
+    - 工厂模式
+    - [笔记](demo80/readme.md)
+    - [test1.cpp](demo80/test1.cpp)
+    - [test2.cpp](demo80/test2.cpp)
+    - [test3.cpp](demo80/test3.cpp)
+    - [C++设计模式 - 简单工厂，工厂方法和抽象工厂](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792594)
+- [demo81](demo81)
+    - 代理模式
+    - [笔记](demo81/readme.md)
+    - [test1.cpp](demo81/test1.cpp)
+    - [test2.cpp](demo81/test2.cpp)
+- [demo82](demo82)
+    - 装饰器模式
+    - [笔记](demo82/readme.md)
+    - [test.cpp](demo82/test.cpp)
+- [demo83](demo83)
+    - 适配器模式
+    - [笔记](demo83/readme.md)
+    - [test.cpp](demo83/test.cpp)
+- [demo84](demo84)
+    - 观察者模式
+    - [笔记](demo84/readme.md)
+    - [test.cpp](demo84/test.cpp)
+
+## C++11 容器 emplace 方法原理解析
+- [demo85](demo85)
+    - C++ emplace
+    - [笔记](demo85/readme.md)
+    - [test1.cpp](demo85/)
+
+# 参考链接
+- [【中级】C++开发工程师基础进阶课程-夯实C++基础核心内容](https://ke.qq.com/course/464039#term_id=103626440)
+- [【高级】C++开发工程师高级进阶课程-提升C++面试和开发能力](https://ke.qq.com/course/422098#term_id=105694590)
+- [C++STL - 容器空间配置器allocator的原理](https://blog.csdn.net/QIANGWEIYUAN/article/details/89184546)
+- [C++STL 容器内容总结](https://blog.csdn.net/QIANGWEIYUAN/article/details/88792786)
+- [C++ 迭代器iterator详解](https://blog.csdn.net/QIANGWEIYUAN/article/details/89184546)
+- [深入掌握C++智能指针](https://blog.csdn.net/QIANGWEIYUAN/article/details/88562935)
+- [现代 C++ 编程实战(吴咏炜)](https://time.geekbang.org/column/intro/100040501)
+- [罗剑锋的 C++ 实战笔记](https://time.geekbang.org/column/intro/100051801)
+- [深入 C 语言和程序运行原理](https://time.geekbang.org/column/intro/100100701)
+- [编程高手必学的内存知识](https://time.geekbang.org/column/intro/100094901)
